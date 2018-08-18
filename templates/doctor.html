@@ -7,7 +7,16 @@
   </head>
   <body>
     {{ content }}
-  <button onclick="makeACall()"></button>
+    <button onclick="makeACall()">Click here</button>
+    <div id="link" style="display:none">
+      <iframe src="http://127.0.0.1:5000/videochat" height="570px" width="1300px">
+      </iframe>
+    </div>
+
+
+
+  <button onclick="UberRestFulApi()"></button>
+
   </body>
   <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
   <script>
@@ -22,10 +31,27 @@
           };
   firebase.initializeApp(config); 
   var db=firebase.database();
-  function makeACall()
+ 
+
+   function makeACall() {
+     db.ref('incoming/doctorcall').set('Y');
+   }
+
+
+  db.ref('incoming/doctorrecieve').on('value',function(snapshot){
+  
+    if(snapshot.val()=='Y')
     {
-      db.ref('incoming/doctorcall').set('Y');
+      document.getElementById('link').style.display="block"
     }
+    else
+    {
+     document.getElementById('link').style.display="none"
+    }
+  });
+
+  </script>
+
   </script>
 </html>
 
