@@ -21,7 +21,7 @@
             messagingSenderId: "801857189882"
           };
   firebase.initializeApp(config); 
-  var db=firebase.defaultDataBase();
+  var db=firebase.database();
   function makeACall()
     {
       db.ref('incoming/doctorcall').set('Y');
