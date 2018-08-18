@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def RunApp():
-    return render_template("index.html",title='My first app', content='Hello there')
+    return render_template("index.html",title='My first app', content='Hello there',site='127.0.0.1:5000')
 
 @app.route('/videochat')
 def VideoChat():

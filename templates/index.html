@@ -6,7 +6,26 @@
       <link rel="stylesheet" href="static/styles.css"> 
   </head>
   <body>
-    {{ content }} 
+    {{ content }}
+  <button onclick="makeACall()"></button>
   </body>
+  <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+  <script>
+      // Initialize Firebase
+      var config = {
+            apiKey: "AIzaSyBeTznk_RhBzeaOGcZm566n4nltdKu-1u0",
+            authDomain: "merp-genhax.firebaseapp.com",
+            databaseURL: "https://merp-genhax.firebaseio.com",
+            projectId: "merp-genhax",
+            storageBucket: "merp-genhax.appspot.com",
+            messagingSenderId: "801857189882"
+          };
+  firebase.initializeApp(config); 
+  var db=firebase.defaultDataBase();
+  function makeACall()
+    {
+      db.ref('incoming/doctorcall').set('Y');
+    }
+  </script>
 </html>
 
