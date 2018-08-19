@@ -10,8 +10,13 @@ An emergency broadcast application where the injured or the needy can use their
 
 
 # Project Description
-  This is for the description of the project
+ TO CREATE A PLATFORM FOR PEOPLE TO AQUIRE MEDICAL FACILITIES IN URGENT NEED ASAP.
+ WE HAVE CREATED A VIDEO CHAT BOX FOR COMMUNICATION.
 
+ 
 
 # Roles & Responsibilities
---Add a brief to what your team members contribute in the project
+debabrata -   back end developer system admin
+tapaswin  -   front end and back end developer
+naman     -   web developer(webrtc)
+
