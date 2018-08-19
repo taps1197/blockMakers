@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def RunApp():
-    return render_template("patient.html",title='My first app', content='Hello there',site='127.0.0.1:5000')
+    return render_template("index.html")
 
 @app.route('/videochat')
 def VideoChat():
@@ -16,7 +16,9 @@ def VideoChat():
 @app.route('/doctor')
 def Doctor():
     return render_template("doctor.html")
-
+@app.route('/patient')
+def Patient():
+	return render_template("patient.html",title="Patients")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
