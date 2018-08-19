@@ -13,8 +13,9 @@ def RunApp():
 @app.route('/videochat')
 def VideoChat():
     return render_template("videochat.html",title='Video Chat platform')
-
-
+@app.route('/doctor')
+def Doctor():
+    return render_template("doctor.html")
 
 
 if __name__ == "__main__":
