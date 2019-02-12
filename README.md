@@ -4,9 +4,8 @@ Team "Block Makers" with members- Tapaswin Padhy, Debabrata Choudhury, Naman Ked
 
 # Project Title
 Medical Emergency Response Platform:
-
 An emergency broadcast application where the injured or the needy can use their
-2 
+
 
 
 # Project Description
@@ -20,3 +19,4 @@ debabrata -   back end developer system admin
 tapaswin  -   front end and back end developer
 naman     -   web developer(webrtc)
 
+# Links for WebRTC
